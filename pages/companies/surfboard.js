@@ -1,10 +1,10 @@
 import React from "react";
-import Contentstack from "../components/Contentstack";
+import Surfboard from '../../components/Surfboard';
 
 export default function surfBoard() {
 	return (
 		<div>
-			<Contentstack />
+			<Surfboard />
 		</div>
 	);
 }

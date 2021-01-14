@@ -1,5 +1,5 @@
 import React from "react";
-import Contentstack from "../components/Contentstack";
+import Contentstack from "../../components/Contentstack";
 
 export default function contentStack() {
 	return (
