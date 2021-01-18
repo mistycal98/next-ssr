@@ -9,13 +9,14 @@ const Raw = (props) => {
   console.log(props);
   return (
     <div className="d-flex flex-column">
-      <RawNavbar logo={props.data[0].logo} className="flex-grow-1" />
+      <RawNavbar logo={props.data[0].logo} />
       <RawBody
         favicon={props.data[0].favicon}
         image={props.data[0].content.image}
-        className="flex-grow-4"
+        heading={props.data[0].content.heading}
+        subHeading={props.data[0].content.subHeading}
       />
-      <RawFooter className="flex-grow-1" />
+      <RawFooter footerLinks={props.data[0].footerLinks} />
     </div>
   );
 };
