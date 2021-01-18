@@ -1,0 +1,18 @@
+.nav {
+  background-color: black;
+  .burger {
+    background-color: white;
+  }
+}
+.nav-link {
+  color: white !important;
+  &:hover {
+    color: white;
+    padding: 0.1;
+    border-bottom: 1px solid white;
+  }
+}
+
+.rounded {
+  border-radius: 40px;
+}

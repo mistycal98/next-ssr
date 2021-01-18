@@ -4,18 +4,14 @@ import Layout from "../../components/Layout";
 import axios from "axios";
 
 export default function rawengineering(props) {
-	return (
-		
-			<Raw data={props.data} />
-		
-	);
+  return <Raw data={props.data} />;
 }
 
 export const getStaticProps = async () => {
-	let { data } = await axios.get("https://mistycal98.github.io/static-json-files/raweng.json");
-	return {
-		props: {
-			data: [...data],
-		},
-	};
+  let { data } = await axios.get("https://mistycal98.github.io/static-json-files/raweng.json");
+  return {
+    props: {
+      data: [...data],
+    },
+  };
 };

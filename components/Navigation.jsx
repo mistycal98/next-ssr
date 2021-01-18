@@ -22,7 +22,7 @@ function Navigation() {
 					</Navbar.Brand>
 				</a>
 			</Link>
-			<Container className="justify-content-end">
+			<Container className="justify-content-end mr-0">
 				{/* Raw Engineering NavBar */}
 				<Nav.Item>
 					<Nav.Link>
