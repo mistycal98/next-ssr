@@ -4,17 +4,11 @@ import Layout from "../../components/Layout";
 import axios from "axios";
 
 export default function contentStack(props) {
-	return (
-		<Layout>
-			<Contentstack data={props.data} />
-		</Layout>
-	);
+	return <Contentstack data={props.data} />;
 }
 
 export const getStaticProps = async () => {
-	let { data } = await axios.get(
-		"https://mistycal98.github.io/static-json-files/contentstack.json"
-	);
+	let { data } = await axios.get("https://mistycal98.github.io/static-json-files/contentstack.json");
 	return {
 		props: {
 			data: [...data],

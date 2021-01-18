@@ -5,9 +5,9 @@ import axios from "axios";
 
 export default function rawengineering(props) {
 	return (
-		<Layout>
+		
 			<Raw data={props.data} />
-		</Layout>
+		
 	);
 }
 
