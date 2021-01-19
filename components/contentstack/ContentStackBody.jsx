@@ -1,7 +1,9 @@
 import React from "react";
 import Head from "next/head";
-import style from "./ContentStack.module.scss";
+import style from "./contentStack.module.scss";
 import Image from "next/image";
+import { Button } from 'react-bootstrap';
+
 
 function ContentStackBody(props) {
   return (
@@ -19,6 +21,7 @@ function ContentStackBody(props) {
           <h1>{props.content.heading}</h1>
           <p>{props.content.subHeading}</p>
         </div>
+
       </div>
     </>
   );

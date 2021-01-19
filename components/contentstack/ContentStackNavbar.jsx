@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ContentStack.module.scss";
+import styles from "./contentStack.module.scss";
 import { Navbar, Container, Nav, NavDropdown, Button } from "react-bootstrap";
 import Image from "next/image";
 

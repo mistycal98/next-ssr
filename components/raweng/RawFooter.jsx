@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Button } from "react-bootstrap";
+import { Container, Button, Row, Col } from "react-bootstrap";
 import styles from "./raweng.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../../fontawesome";
@@ -21,21 +21,22 @@ function RawFooter(props) {
           <p className="m-3 d-inline"> Backend Term of Use</p>
           <p className="m-3 fs-7">Copyright © 2021 Raw Engineering LLC. All Rights Reserved.</p>
         </Container>
-        <div>
-         
-          <a href={props.footerLinks.twitter}>
+        <Row className=" w-25 h-100">
+          <Col><a href={props.footerLinks.twitter}>
             <FontAwesomeIcon icon={["fab", "twitter"]} />
-          </a>
-          <a href={props.footerLinks.linkedin}>
+          </a></Col>
+          <Col><a href={props.footerLinks.linkedin}>
             <FontAwesomeIcon icon={["fab", "linkedin"]} />
-          </a>
-          <a href={props.footerLinks.facebook}>
+          </a></Col>
+          <Col><a href={props.footerLinks.facebook}>
             <FontAwesomeIcon icon={["fab", "facebook"]} />
-          </a>
-          <a href={props.footerLinks.instagram}>
-            <FontAwesomeIcon icon={["fab", "instagram"]} />
-          </a>
-        </div>
+          </a></Col>
+          <Col>
+            <a href={props.footerLinks.instagram}>
+              <FontAwesomeIcon icon={["fab", "instagram"]} />
+            </a>
+          </Col>
+        </Row>
       </Container>
     </footer>
   );
