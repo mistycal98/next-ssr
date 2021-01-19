@@ -6,7 +6,7 @@ import styles from "./raweng.module.scss";
 
 function RawNavbar(props) {
   return (
-    <Navbar collapseOnSelect expand="lg" className={["px=5", styles.nav]}>
+    <Navbar collapseOnSelect expand="lg" className={["px-5", styles.nav]}>
       <Image src={props.logo} alt="Raweng logo" width={200} height={100} />
       <Navbar.Toggle aria-controls="responsive-navbar-nav" className={styles.burger} />
       <Navbar.Collapse className="justify-content-end mr-0">
