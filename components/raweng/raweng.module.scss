@@ -1,0 +1,32 @@
+.nav {
+	background-color: black;
+	.burger {
+		background-color: white;
+	}
+}
+.nav-link {
+	color: white !important;
+	&:hover {
+		color: white;
+		padding: 0.1;
+		border-bottom: 1px solid white;
+	}
+}
+
+.rounded {
+	border-radius: 40px;
+}
+
+.bgWrap {
+	position: relative;
+	height: 100vh;
+	width: auto;
+	overflow: hidden;
+	z-index: -1;
+}
+
+.center {
+	top: 25%;
+	left: 10%;
+	right: 10%;
+}
