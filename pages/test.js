@@ -1,19 +1,20 @@
-import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // icons
-import { faCode } from "@fortawesome/free-solid-svg-icons";
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
-
+import "../fontawesome";
 import React from "react";
 
 function test() {
-	return (
-		<div>
-			<FontAwesomeIcon icon={faCode} />
-            <FontAwesomeIcon icon={faTwitter}/>
-		</div>
-	);
+  return (
+    <div>
+      <a href="www.google.com" className="text-white">
+        <FontAwesomeIcon icon={["fab", "twitter"]} size="2x" />
+      </a>
+      <FontAwesomeIcon icon={["fab", "instagram"]} size="2x" />
+      <FontAwesomeIcon icon={["fab", "linkedin"]} size="2x" />
+      <FontAwesomeIcon icon={["fab", "facebook"]} size="2x" />
+    </div>
+  );
 }
 
 export default test;

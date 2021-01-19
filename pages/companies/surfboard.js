@@ -1,10 +1,10 @@
 import React from "react";
 import Surfboard from "../../components/Surfboard";
-import Layout from "../../components/Layout";
 import axios from "axios";
 
 export default function surfBoard(props) {
-  return <Surfboard data={props.data} />;
+  console.log(props.data[0].logo);
+  return <Surfboard data={props.data[0]} />;
 }
 
 export const getStaticProps = async () => {

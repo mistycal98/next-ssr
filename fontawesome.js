@@ -1,4 +1,10 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { fab } from "@fortawesome/free-brands-svg-icons";
+import {
+  fab,
+  faInstagram,
+  faLinkedinIn,
+  faTwitter,
+  faFacebookF,
+} from "@fortawesome/free-brands-svg-icons";
 
-library.add(fab);
+library.add(fab, faTwitter, faLinkedinIn, faFacebookF, faInstagram);

@@ -9,9 +9,13 @@ const Surfboard = (props) => {
   console.log(props);
   return (
     <div>
-      <SurfBoardNavbar />
-      <SurfBoardBody />
-      <SurfBoardFooter />
+      <SurfBoardNavbar logo={props.data.logo} />
+      <SurfBoardBody
+        favicon={props.data.favicon}
+        content={props.data.content}
+        image={props.data.content.image}
+      />
+      <SurfBoardFooter footerLinks={props.data.footerLinks} />
     </div>
   );
 };
