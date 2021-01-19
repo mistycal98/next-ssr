@@ -22,15 +22,21 @@ function RawFooter(props) {
           <p className="m-3 fs-7">Copyright © 2021 Raw Engineering LLC. All Rights Reserved.</p>
         </Container>
         <Row className=" w-25 h-100">
-          <Col><a href={props.footerLinks.twitter}>
-            <FontAwesomeIcon icon={["fab", "twitter"]} />
-          </a></Col>
-          <Col><a href={props.footerLinks.linkedin}>
-            <FontAwesomeIcon icon={["fab", "linkedin"]} />
-          </a></Col>
-          <Col><a href={props.footerLinks.facebook}>
-            <FontAwesomeIcon icon={["fab", "facebook"]} />
-          </a></Col>
+          <Col>
+            <a href={props.footerLinks.twitter}>
+              <FontAwesomeIcon icon={["fab", "twitter"]} />
+            </a>
+          </Col>
+          <Col>
+            <a href={props.footerLinks.linkedin}>
+              <FontAwesomeIcon icon={["fab", "linkedin"]} />
+            </a>
+          </Col>
+          <Col>
+            <a href={props.footerLinks.facebook}>
+              <FontAwesomeIcon icon={["fab", "facebook"]} />
+            </a>
+          </Col>
           <Col>
             <a href={props.footerLinks.instagram}>
               <FontAwesomeIcon icon={["fab", "instagram"]} />

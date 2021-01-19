@@ -24,7 +24,7 @@ function ContentStackNavbar(props) {
         <Nav.Item>
           <Nav.Link className={styles["nav-link"]}>Company</Nav.Link>
         </Nav.Item>
-        <Button className={["px-3", styles.stackBtn]}>REQUEST DEMO</Button>
+        <Button className={["px-3 py-1", styles.stackBtn]}>REQUEST DEMO</Button>
       </Navbar.Collapse>
     </Navbar>
   );

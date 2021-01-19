@@ -54,7 +54,7 @@ function SurfBoardFooter(props) {
           </Col>
         </Row>
       </Container>
-      <Container className="ml-3 text-center">
+      <Container className="my-3 text-center">
         Copyright © 2021 Surfboard Ventures. All Rights Reserved.
       </Container>
     </Container>
