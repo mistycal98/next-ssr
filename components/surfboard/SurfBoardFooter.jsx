@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../../fontawesome";
@@ -7,11 +7,11 @@ import "../../fontawesome";
 function SurfBoardFooter(props) {
   return (
     <Container>
-      <Container className="d-flex border border-primary">
+      <Container className="d-flex m-3">
         <Container>
           <Image src={props.logo} alt="Raweng logo" width={200} height={100} />
         </Container>
-        <Container className="d-flex flex-column">
+        <Container className="m-3 d-flex flex-column">
           <a href="" className="m-1">
             Portfolio
           </a>
@@ -22,7 +22,7 @@ function SurfBoardFooter(props) {
             Events
           </a>
         </Container>
-        <Container className="d-flex flex-column">
+        <Container className="m-3 d-flex flex-column">
           <a href="" className="m-1">
             Gallery
           </a>
@@ -33,18 +33,30 @@ function SurfBoardFooter(props) {
             Contact Us
           </a>
         </Container>
-        <Container>
+        <Container className="m-3">
           <a href="">info@surfboardventures.com</a>
         </Container>
-        <Container>
-          <FontAwesomeIcon icon={["fab", "facebook"]} />
-          <FontAwesomeIcon icon={["fab", "linkedin"]} />
-          <FontAwesomeIcon icon={["fab", "twitter"]} />
-          <FontAwesomeIcon icon={["fab", "youtube"]} />
-          <FontAwesomeIcon icon={["fab", "instagram"]} />;
-        </Container>
+        <Row className="mt-3 w-100 h-100">
+          <Col>
+            <FontAwesomeIcon icon={["fab", "facebook"]} />
+          </Col>
+          <Col>
+            <FontAwesomeIcon icon={["fab", "linkedin"]} />
+          </Col>
+          <Col>
+            <FontAwesomeIcon icon={["fab", "twitter"]} />
+          </Col>
+          <Col>
+            <FontAwesomeIcon icon={["fab", "youtube"]} />
+          </Col>
+          <Col>
+            <FontAwesomeIcon icon={["fab", "instagram"]} />
+          </Col>
+        </Row>
       </Container>
-      <Container>Copyright © 2021 Surfboard Ventures. All Rights Reserved.</Container>
+      <Container className="ml-3 text-center">
+        Copyright © 2021 Surfboard Ventures. All Rights Reserved.
+      </Container>
     </Container>
   );
 }
