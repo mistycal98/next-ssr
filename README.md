@@ -1,6 +1,22 @@
+# Company Website: Server Side Rendering
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Features
+
+- Every Page Server Side Rendered(NextJS-SSR)
+- Individual Company pages for
+  - Raw Engineering
+  - ContentStack
+  - Surfboard Ventures
+- FontAwesome
+
+# Implementation
+
+- BootStrap Implementation
+  - [Bootstrap](https://getbootstrap.com/) Library(v5.0.0-beta-1) [npm package](https://www.npmjs.com/package/bootstrap)
+  - react-bootstrap
+  - f
 
 First, run the development server:
 
