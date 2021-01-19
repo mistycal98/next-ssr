@@ -1,0 +1,47 @@
+.nav {
+  //   background-color: linear-gradient(to right, #350b53, #4d1f55);
+  background-color: #350b53;
+  .burger {
+    background-color: white;
+  }
+}
+
+.stackBtn {
+  background-color: #eb5646;
+  border: 3px solid transparent;
+  &:hover {
+    border: 3px solid #eb5646;
+    background-color: transparent;
+  }
+}
+
+.nav-link {
+  color: white !important;
+  &:hover {
+    color: white;
+  }
+}
+
+.rounded {
+  border-radius: 40px;
+}
+
+.bgWrap {
+  position: relative;
+  height: 100vh;
+  width: auto;
+  overflow: hidden;
+  z-index: -1;
+  h1 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+}
+
+.center {
+  top: 25%;
+  left: 10%;
+  right: 10%;
+}

@@ -15,7 +15,7 @@ const Raw = (props) => {
 				heading={props.data[0].content.heading}
 				subHeading={props.data[0].content.subHeading}
 			/>
-			<RawFooter footerLinks={props.data[0].footerLinks} />
+			<RawFooter footerLinks={props.data[0].footerLinks}  />
 		</div>
 	);
 };

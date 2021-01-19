@@ -5,7 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../../fontawesome";
 
 function RawFooter(props) {
-  console.log(props);
+  let footerLinks = props.footerLinks;
+  console.log(footerLinks);
   return (
     <footer className="d-flex flex-column bg-dark text-white">
       <Container className="w-100 m-auto p-3 text-center">
@@ -20,14 +21,21 @@ function RawFooter(props) {
           <p className="m-3 d-inline"> Backend Term of Use</p>
           <p className="m-3 fs-7">Copyright © 2021 Raw Engineering LLC. All Rights Reserved.</p>
         </Container>
-        <Container className="d-flex justify-content-end border border-primary w-100 mt-0">
-          <FontAwesomeIcon className="m-3" icon={["fab", "twitter"]} size="2x" />
-          <FontAwesomeIcon className="m-3" icon={["fab", "instagram"]} size="2x" />
-          <FontAwesomeIcon className="m-3" icon={["fab", "linkedin"]} size="2x" />
-          <FontAwesomeIcon className="m-3" icon={["fab", "facebook"]} size="2x" />
-          {/* <FontAwesomeIcon icon={faLinkedinIn} className="text-white m-3" size="2x" />
-          <FontAwesomeIcon icon={faFacebookF} className="text-white m-3" size="2x" /> */}
-        </Container>
+        <div>
+         
+          <a href={props.footerLinks.twitter}>
+            <FontAwesomeIcon icon={["fab", "twitter"]} />
+          </a>
+          <a href={props.footerLinks.linkedin}>
+            <FontAwesomeIcon icon={["fab", "linkedin"]} />
+          </a>
+          <a href={props.footerLinks.facebook}>
+            <FontAwesomeIcon icon={["fab", "facebook"]} />
+          </a>
+          <a href={props.footerLinks.instagram}>
+            <FontAwesomeIcon icon={["fab", "instagram"]} />
+          </a>
+        </div>
       </Container>
     </footer>
   );

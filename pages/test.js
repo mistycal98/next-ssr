@@ -6,7 +6,7 @@ import React from "react";
 
 function test() {
   return (
-    <div>
+    <div className="d-flex flex-column">
       <a href="www.google.com" className="text-white">
         <FontAwesomeIcon icon={["fab", "twitter"]} size="2x" />
       </a>

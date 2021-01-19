@@ -5,6 +5,7 @@ import {
   faLinkedinIn,
   faTwitter,
   faFacebookF,
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
-library.add(fab, faTwitter, faLinkedinIn, faFacebookF, faInstagram);
+library.add(fab, faTwitter, faLinkedinIn, faFacebookF, faInstagram, faYoutube);

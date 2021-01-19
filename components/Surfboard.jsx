@@ -6,7 +6,6 @@ import SurfBoardFooter from "./surfboard/SurfBoardFooter";
 import SurfBoardNavbar from "./surfboard/SurfBoardNavbar";
 
 const Surfboard = (props) => {
-  console.log(props);
   return (
     <div>
       <SurfBoardNavbar logo={props.data.logo} />
@@ -15,7 +14,7 @@ const Surfboard = (props) => {
         content={props.data.content}
         image={props.data.content.image}
       />
-      <SurfBoardFooter footerLinks={props.data.footerLinks} />
+      <SurfBoardFooter footerLinks={props.data.footerLinks} logo={props.data.logo} />
     </div>
   );
 };
