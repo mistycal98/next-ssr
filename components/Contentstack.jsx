@@ -6,7 +6,6 @@ import ContentStackBody from "./contentstack/ContentStackBody";
 import ContentStackFooter from "./contentstack/ContentStackFooter";
 
 const Contentstack = (props) => {
-  console.log(props);
   return (
     <div>
       <ContentStackNavbar logoWhite={props.data[0].logoWhite} />

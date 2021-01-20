@@ -27,7 +27,7 @@ function Navigation() {
 				<Nav.Item>
 					<Nav.Link>
 						<Link href="/companies/raweng">
-							<a>Raw Engineering</a>
+							<a className="text-white">Raw Engineering</a>
 						</Link>
 					</Nav.Link>
 				</Nav.Item>
@@ -36,7 +36,7 @@ function Navigation() {
 				<Nav.Item>
 					<Nav.Link>
 						<Link href="/companies/contentstack">
-							<a>ContentStack</a>
+							<a className="text-white">ContentStack</a>
 						</Link>
 					</Nav.Link>
 				</Nav.Item>
@@ -45,7 +45,7 @@ function Navigation() {
 				<Nav.Item>
 					<Nav.Link>
 						<Link href="/companies/surfboard">
-							<a>Surfboard</a>
+							<a className="text-white">Surfboard</a>
 						</Link>
 					</Nav.Link>
 				</Nav.Item>
