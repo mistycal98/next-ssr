@@ -24,30 +24,24 @@ function Navigation() {
 			</Link>
 			<Container className="justify-content-end mr-0">
 				{/* Raw Engineering NavBar */}
-				<Nav.Item>
-					<Nav.Link>
-						<Link href="/companies/raweng">
-							<a className="text-white">Raw Engineering</a>
-						</Link>
-					</Nav.Link>
+				<Nav.Item className="mx-3">
+					<Link href="/companies/raweng">
+						<a className="text-white">Raw Engineering</a>
+					</Link>
 				</Nav.Item>
 
 				{/* ContentStack NavBar */}
-				<Nav.Item>
-					<Nav.Link>
-						<Link href="/companies/contentstack">
-							<a className="text-white">ContentStack</a>
-						</Link>
-					</Nav.Link>
+				<Nav.Item className="mx-3">
+					<Link href="/companies/contentstack">
+						<a className="text-white">ContentStack</a>
+					</Link>
 				</Nav.Item>
 
 				{/* SurfBoard NavBar */}
-				<Nav.Item>
-					<Nav.Link>
+				<Nav.Item className="mx-3">
 						<Link href="/companies/surfboard">
 							<a className="text-white">Surfboard</a>
 						</Link>
-					</Nav.Link>
 				</Nav.Item>
 			</Container>
 		</Navbar>
