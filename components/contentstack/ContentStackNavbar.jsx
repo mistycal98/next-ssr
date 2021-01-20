@@ -2,11 +2,16 @@ import React from "react";
 import styles from "./contentStack.module.scss";
 import { Navbar, Container, Nav, NavDropdown, Button } from "react-bootstrap";
 import Image from "next/image";
+import Link from "next/link";
 
 function ContentStackNavbar(props) {
   return (
     <Navbar collapseOnSelect expand="lg" className={["p-4 px-5 h-auto", styles.nav]}>
-      <Image src={props.logoWhite} alt="Raweng logo" width={250} height={40} />
+      <Link href="/">
+        <a>
+          <Image src={props.logoWhite} alt="Raweng logo" width={250} height={40} />
+        </a>
+      </Link>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" className={styles.burger} />
       <Navbar.Collapse className="justify-content-end mr-0">
         <Nav.Item>

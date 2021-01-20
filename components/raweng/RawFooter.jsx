@@ -6,7 +6,6 @@ import "../../fontawesome";
 
 function RawFooter(props) {
   let footerLinks = props.footerLinks;
-  console.log(footerLinks);
   return (
     <footer className="d-flex flex-column bg-dark text-white">
       <Container className="w-100 m-auto p-3 text-center">
